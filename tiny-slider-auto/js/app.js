@@ -3,9 +3,9 @@ let slider = tns({
   slideBy: 1,
   speed: 400,
   nav: false,
-  autoplay: true,
-  controls: false,
-  autoplayButtonOutput: false,
+  autoplay: true, // turns on autoplay
+  controls: false, // removes previous and next button
+  autoplayButtonOutput: false, // removes the stop button
   responsive: {
     1600: {
       items: 4,

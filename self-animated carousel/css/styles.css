@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+}
+/* Please download the images for faster transition speed. I resorted to the image url for demonstrating on codepen */
+
+.carousel-container{
+  background-color: gray; /* so you can see container */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 500px;
+  margin: auto; /* auto applies display flex properties */
+}
+
+.position-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-title{
+  font-size: 1.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.carousel{
+  width: 400px;
+  height: 221px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/robot_1.jpg);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
