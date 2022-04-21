@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+}
+
+body{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+#slider{
+  height: 500px;
+  border: 1px solid black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsive on larger monitors */
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+/* responsive on larger monitors */
+.subcontainer {
+  width:85%;
+  margin: auto;
+}
+
+.slide-img{
+  width: 100%;
+  height: 275px;
+  /* border: 1px solid white; */   /* helps to see the area where the images will go while coding */
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.slide-img:hover{
+  box-shadow: 0 0 0 200px black inset;
+}
+
+/* Learn More Link */
+.slide-img a{
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0; /* we only want to see if when we hover */
+}
+
+.slide-img:hover a{
+opacity: 1;
+transform: scale(1);
+}
+
+/* IMAGES - Use the Relative Path ../image/picture to Set the Background in CSS */
+.img-1{
+  background-image: url(../images/img-1.jpg);
+}
+
+.img-2{
+  background-image: url(../images/img-2.jpg);
+}
+
+.img-3{
+  background-image: url(../images/img-3.jpg);
+}
+
+.img-4{
+  background-image: url(../images/img-4.jpg);
+}
+
+.img-5{
+  background-image: url(../images/img-5.jpg);
+}
+
+/* responsive on mobile monitors */
+@media(max-width:1600px){
+  .container{
+    width: 100%
+  }
+}
