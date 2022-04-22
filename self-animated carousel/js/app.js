@@ -35,3 +35,4 @@ startCarousel = () => {
   // When the last image is reached start at the beginning again.
   if (index > images.length - 1) index = 0;
 };
+
